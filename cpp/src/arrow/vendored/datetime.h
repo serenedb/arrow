@@ -17,10 +17,16 @@
 
 #pragma once
 
-#include "arrow/vendored/datetime/date.h"  // IWYU pragma: export
-#include "arrow/vendored/datetime/tz.h"    // IWYU pragma: export
+#include "date/date.h"  // IWYU pragma: export
+#include "date/tz.h"    // IWYU pragma: export
 
 // Can be defined by date.h.
 #ifdef NOEXCEPT
 #undef NOEXCEPT
 #endif
+
+namespace arrow_vendored {
+
+namespace date = ::date;
+
+}  // namespace arrow_vendored

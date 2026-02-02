@@ -17,15 +17,15 @@
 
 #pragma once
 
-#include "arrow/vendored/double-conversion/double-conversion.h"  // IWYU pragma: export
+#include "double-conversion/double-conversion.h"  // IWYU pragma: export
 
 namespace arrow {
 namespace util {
 namespace double_conversion {
 
-using ::arrow_vendored::double_conversion::DoubleToStringConverter;
-using ::arrow_vendored::double_conversion::StringBuilder;
-using ::arrow_vendored::double_conversion::StringToDoubleConverter;
+using ::double_conversion::DoubleToStringConverter;
+using ::double_conversion::StringBuilder;
+using ::double_conversion::StringToDoubleConverter;
 
 }  // namespace double_conversion
 }  // namespace util
