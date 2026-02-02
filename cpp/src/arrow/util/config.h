@@ -43,10 +43,10 @@
 /* #undef ARROW_FILESYSTEM */
 /* #undef ARROW_FLIGHT */
 /* #undef ARROW_FLIGHT_SQL */
-#define ARROW_IPC
+/* #undef ARROW_IPC */
 /* #undef ARROW_JEMALLOC */
 /* #undef ARROW_JEMALLOC_VENDORED */
-#define ARROW_JSON
+/* #undef ARROW_JSON */
 /* #undef ARROW_ORC */
 /* #undef ARROW_PARQUET */
 /* #undef ARROW_SUBSTRAIT */
