@@ -99,8 +99,10 @@ arrow::Result<std::shared_ptr<arrow::dataset::FileFormat>> GetFileFormat(
   switch (file_format_id) {
     case 0:
       return std::make_shared<arrow::dataset::ParquetFileFormat>();
+#ifdef ARROW_IPC
     case 1:
       return std::make_shared<arrow::dataset::IpcFileFormat>();
+#endif
 #ifdef ARROW_ORC
     case 2:
       return std::make_shared<arrow::dataset::OrcFileFormat>();

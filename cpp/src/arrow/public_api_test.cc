@@ -25,7 +25,9 @@
 #include "arrow/api.h"          // IWYU pragma: keep
 #include "arrow/compute/api.h"  // IWYU pragma: keep
 #include "arrow/io/api.h"       // IWYU pragma: keep
+#ifdef ARROW_IPC
 #include "arrow/ipc/api.h"      // IWYU pragma: keep
+#endif
 
 #ifdef ARROW_CSV
 #include "arrow/csv/api.h"  // IWYU pragma: keep
