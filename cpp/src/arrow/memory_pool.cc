@@ -376,7 +376,8 @@ class SystemAllocator {
   }
 
   static void ReleaseUnused() {
-#ifdef __GLIBC__
+// TODO: Should be enabled for google tcmalloc
+#if defined(__GLIBC__) && !defined(ARROW_JEMALLOC) && !defined(ARROW_MIMALLOC)
     // The return value of malloc_trim is not an error but to inform
     // you if memory was actually released or not, which we do not care about here
     ARROW_UNUSED(malloc_trim(0));
